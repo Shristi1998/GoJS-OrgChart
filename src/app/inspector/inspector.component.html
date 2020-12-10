@@ -1,0 +1,6 @@
+<h3>Edit the details of selected node and see the change in hierarchy accordingly!</h3>
+<form *ngIf="selectedNode" (ngSubmit)="onCommitForm()">
+  Name: <input name="name" [(ngModel)]="data.name" />
+  Boss: <input name="parent" [(ngModel)]="data.parent" />
+  <button type="submit">Commit</button>
+</form>
